@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güneşmice | Mustafa Güneş</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, section, footer { padding: 20px; }
+    nav a { margin: 0 10px; text-decoration: none; color: #0077cc; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    .section { margin-bottom: 40px; }
+    .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+    footer { background-color: #f0f0f0; text-align: center; font-size: 14px; }
+    button { padding: 8px 16px; background-color: #0077cc; color: white; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GÜNEŞMİCE</h1>
+  <p>Mustafa Güneş'in Resmi Kazanç Platformu</p>
+</header>
+
+<nav>
+  <a href="#blog">Blog</a>
+  <a href="#store">Ürünler</a>
+  <a href="#courses">Kurslar</a>
+  <a href="#services">Hizmetler</a>
+  <a href="#members">Üyelik</a>
+  <a href="#contact">İletişim</a>
+</nav>
+
+<div class="container">
+
+  <section id="blog" class="section">
+    <h2>📝 Blog</h2>
+    <div class="card">
+      <h3>Başarıya Giden Yol</h3>
+      <p>Girişimcilik, kişisel gelişim ve dijital dünyada para kazanma üzerine makaleler.</p>
+    </div>
+  </section>
+
+  <section id="store" class="section">
+    <h2>🛒 Dijital Ürünler</h2>
+    <div class="card">
+      <h3>PDF E-kitap: Online Gelir Modelleri</h3>
+      <p>Fiyat: 59 TL</p>
+      <button onclick="window.location.href='https://shopier.com'">Satın Al</button>
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <h2>🎓 Online Kurslar</h2>
+    <div class="card">
+      <h3>Web Sitesi Yapımı Eğitimi</h3>
+      <p>HTML, CSS, JavaScript ile kendi siteni sıfırdan yap.</p>
+      <button onclick="window.location.href='https://gumroad.com'">Kursa Katıl</button>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>🔧 Hizmetler</h2>
+    <div class="card">
+      <h3>Web Sitesi Kurulumu</h3>
+      <p>Kendi kişisel veya ticari siteni birlikte oluşturalım.</p>
+      <button onclick="window.location.href='#contact'">Teklif Al</button>
+    </div>
+  </section>
+
+  <section id="members" class="section">
+    <h2>🔐 Üyelikli İçerik</h2>
+    <div class="card">
+      <h3>Üyelere Özel Yazılar</h3>
+      <p>Giriş yaparak gizli içeriklere erişebilirsiniz.</p>
+      <button onclick="alert('Giriş sistemi ileride aktif olacak')">Giriş Yap</button>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📩 İletişim</h2>
+    <form>
+      <label>Ad Soyad:</label><br>
+      <input type="text" name="name"><br>
+      <label>E-posta:</label><br>
+      <input type="email" name="email"><br>
+      <label>Mesaj:</label><br>
+      <textarea name="message" rows="4"></textarea><br><br>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Mustafa Güneş | Güneşmice</p>
+</footer>
+
+</body>
+</html>
