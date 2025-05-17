@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mustafa Güneş | Güneşmice</title>
+  <style>
+    /* Genel stil */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffdf7;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #f4b400;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #c18600;
+    }
+
+    /* Header */
+    header {
+      background: #ffcc33;
+      color: #333;
+      padding: 60px 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      font-style: italic;
+      color: #5a4a00;
+    }
+
+    /* Navigation */
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    nav a {
+      display: inline-block;
+      padding: 15px 20px;
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #f4b400;
+      color: #222;
+      outline: none;
+      border-radius: 4px;
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      color: #f4b400;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #f4b400;
+      padding-bottom: 8px;
+      font-weight: 700;
+    }
+
+    /* Projeler listesi */
+    #projeler ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    #projeler li {
+      background: #fff8e1;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      transition: transform 0.3s ease;
+    }
+    #projeler li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgb(0 0 0 / 0.15);
+    }
+    #projeler img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    #projeler strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: #c18600;
+    }
+
+    /* İletişim */
+    #iletisim p {
+      font-size: 1.1rem;
+      margin: 12px 0;
+    }
+    #iletisim a {
+      font-weight: 600;
+    }
+
+    /* İletişim formu */
+    form {
+      margin-top: 20px;
+      background: #fff8e1;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+      max-width: 450px;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #c18600;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #f4b400;
+      border-radius: 6px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #c18600;
+      outline: none;
+    }
+    form button {
+      background: #f4b400;
+      color: #222;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background: #c18600;
+      color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      margin-top: 60px;
+      letter-spacing: 0.05em;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        padding: 12px 0;
+      }
+      #projeler ul {
+        grid-template-columns: 1fr;
+      }
+      form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mustafa Güneş</h1>
+  <p>Güneşmice • Geliştirici | İçerik Üretici | Meraklı Ruh</p>
+</header>
+
+<nav>
+  <a href="#hakkimda">Hakkımda</a>
+  <a href="#projeler">Projeler</a>
+  <a href="#iletisim">İletişim</a>
+</nav>
+
+<section id="hakkimda">
+  <h2>Hakkımda</h2>
+  <p>Ben Mustafa Güneş. Güneşmice markasıyla içerik üretiyor, projeler geliştiriyor ve öğrenmeye devam ediyorum. Web geliştirme, yazılım ve yaratıcılık odaklı çalışmalarıma bu sitede yer veriyorum.</p>
+</section>
+
+<section id="projeler">
+  <h2>Projeler</h2>
+  <ul>
+    <li>
+      <img src="https://via.placeholder.com/60?text=Blog" alt="Güneşmice Blog" />
+      <div>
+        <strong>Güneşmice Blog:</strong>
+        Kendi blog altyapımla oluşturduğum kişisel yazılar.
+      </div>
+    </li>
+    <li>
+      <img src="https://via.placeholder.com/60?text=Oyun" alt="HTML Mini Oyunlar" />
+      <div>
+        <strong>HTML Mini Oyunlar:</strong>
+        JavaScript ile yazılmış basit oyunlar.
+      </div>
+    </li>
+    <li>
+      <img src="https://via.placeholder.com/60?text=Takvim" alt="Mobil Takvim Uygulaması" />
+      <div>
+        <strong>Mobil Takvim Uygulaması:</strong>
+        Flutter ile geliştirdiğim günlük planlayıcı.
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="iletisim">
+  <h2>İletişim</h2>
+  <p>Email: <a href="mailto:mustafa@example.com">mustafa@example.com</a></p>
+  <p>LinkedIn: <a href="#" target="_blank" rel="noopener">linkedin.com/in/mustafagunes</a></p>
+  <p>Instagram: <a href="#" target="_blank" rel="noopener">@gunesmice</a></p>
+
+  <form id="contactForm" onsubmit="return handleSubmit(event)">
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" name="name" placeholder="Adınızı girin" required />
+
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="E-posta adresinizi girin" required />
+
+    <label for="message">Mesajınız:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+
+    <button type="submit">Gönder</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Mustafa Güneş – Güneşmice. Tüm hakları saklıdır.
+</footer>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert("Mesajınız alındı! Teşekkürler, en kısa sürede dönüş yapacağım.");
+    event.target.reset();
+  }
+</script>
+
+</body>
+</html>
